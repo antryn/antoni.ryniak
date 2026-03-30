@@ -246,7 +246,7 @@ Error generating stack: `+r.message+`
         for each partsList in sheet.partsLists
             for each row in partsList.rows
 
-                partName = row.getCell("NAZWA").value
+                partName = row.getCell("NAME").value
                 if (partName is empty or not an .ipt file) skip
 
                 appearance = getPartStandardiProperty(partName, "Appearance")
